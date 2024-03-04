@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --main-bg-color: rgb(48, 0, 48);
+    --main4-bg-color:rgb(32, 0, 32);
+    --main2-bg-color: rgb(196, 0, 196);
+    --main3-bg-color: rgb(0, 158, 119);
+    --font1: "Roboto Slab", serif;
+    --font2: "Poppins", sans-serif;
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+.max-width-1 {
+    max-width: 80vw;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mx-1 {
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.my-2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.btn {
+    padding: 6px 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.form-input {
+    padding: 3px 5px;
+    font-size: 14px;
+    border: 2px solid grey;
+    outline: none;
+    border-radius: 6px;
+    margin: 0 13px;
+    font-family: var(--font2);
+}
+
+.form-box input,
+textarea {
+    resize: none;
+    width: 52vw;
+    padding: 10px 6px;
+    margin: 5px 0 0 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--main3-bg-color);
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--font2);
+}
