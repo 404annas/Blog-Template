@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Programming Cheat | Blog For Coders</title>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span>
+                    <img src="https://img.freepik.com/premium-vector/gas-mask-illustration-hand-drawn_309604-8.jpg?w=740"
+                        alt="Programming Cheat Logo">
+                </span>
+            </a>
+                <p>Programming Cheat</p>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get" name="query" id="full-Form">
+                <input class="form-input" type="text" placeholder="Blog Search">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="contact-content max-width-1 m-auto">
+        <div class="max-width-1 m-auto space-up mx-1">
+            <h1 class="font1" id="search-result">Feel Free To Contact Us</h1>
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="bbcfd6c8-464f-4d63-993a-6c3f55107210">
+                    <div class="form-box">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="number" placeholder="Enter Your PhoneNumber" required>
+                    </div>
+                    <div class="form-box">
+                        <textarea name="message" type="message" id="" cols="30" rows="10" placeholder="Enter Your Query..." required></textarea>
+                    </div>
+                    <div class="form-box">
+                        <button class="btn" type="submit">Submit</button>
+                        <button class="btn" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer m-auto">
+        <p class="show">Copyright &copy; | ProgrammingCheat | All Rights Reserved | 2024</p>
+        <p class="hide">Copyright &copy; | ProgrammingCheat</p>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let userForm = document.getElementById("full-Form")
+        let userInput = document.querySelector(".form-input")
+
+        userForm.addEventListener("submit", (e) => {
+            e.preventDefault()
+            let userInputValue = userInput.value.trim()
+            if (userInputValue) {
+                window.location.href = `/search.html?q=${encodeURIComponent(userInputValue)}`
+            }
+            else {
+                alert("Please Enter Any Valid Search Query")
+            }
+        })
+    })
+</script>
+
+</html>

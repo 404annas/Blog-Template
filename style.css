@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+    color: #fff;
+}
+
+/* Navigation */
+
+.navigation {
+    font-family: var(--font1);
+    /* height: 74px; */
+    /* background-color: red; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--main4-bg-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+.nav-left p {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.nav-left span img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-left p {
+    font-size: 1.7rem;
+    color: var(--main3-bg-color);
+}
+
+.nav-left .hide {
+    display: none;
+}
+
+.nav-left ul {
+    padding-top: 4.5px;
+    display: flex;
+    align-items: center;
+    margin: 0 78px;
+    font-size: 16px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+}
+
+.nav-left ul li a:hover {
+    color: rgb(196, 0, 196);
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-right {
+    padding-top: 4.5px;
+}
+
+.space-up {
+    margin-top: 20px;
+}
+
+/* Content */
+
+.content {
+    height: 100%;
+    /* height: 300px; */
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.4;
+    background-image: url('https://img.freepik.com/premium-photo/laptop-with-program-code-technological-background-with-program-code-elements-shields_272306-174.jpg?w=900');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.content-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    /* width: 50%; */
+}
+
+.content-left h1 {
+    font-family: var(--font1);
+    z-index: 1;
+}
+
+.content-left p {
+    font-family: var(--font2);
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* width: 50%; */
+}
+
+.content-right img {
+    /* width: 50%; */
+    height: 350px;
+    /* height: 280px; */
+    border: 2px solid black;
+    border-radius: 50%;
+    /* z-index: 1; */
+}
+
+/* Articles */
+
+.home-articles {
+    /* height: 455px; */
+    /* height: 270px; */
+    background-color: rgb(0, 0, 0);
+    /* box-shadow: 0 0 10px rgb(168, 168, 168); */
+    padding-top: 12px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    width: 234px;
+    height: 255px;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+}
+
+.year-box div {
+    margin: 12px 0px;
+}
+
+.home-article {
+    display: flex;
+    margin: 25px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: var(--main3-bg-color);
+}
+
+.home-article img {
+    width: 300px;
+    /* width: 100%; */
+}
+
+/* Footer */
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--main-bg-color);
+}
+
+.hide {
+    display: none;
+}
